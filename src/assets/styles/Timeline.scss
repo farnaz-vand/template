@@ -3,36 +3,68 @@
     font-family: 'Courier Prime', monospace;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
+.timeline-card .vertical-timeline-element-content {
+    padding: 28px 30px;
+    border-radius: 22px;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.035)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(14px);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
+.timeline-card .vertical-timeline-element-content:hover {
+    transform: translateY(-6px);
+    border-color: rgba(167, 139, 250, 0.55);
+    box-shadow: 0 28px 80px rgba(167, 139, 250, 0.18);
 }
 
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
+.timeline-card .vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgba(255, 255, 255, 0.12);
 }
 
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+.timeline-card .vertical-timeline-element-title {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.3;
 }
 
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+.timeline-card .vertical-timeline-element-subtitle {
+    margin: 0 0 16px;
+    color: #a78bfa;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
-.vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+.timeline-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+    line-height: 1.8;
 }
 
-.svg-inline--fa {
-    color: white;
+.timeline-card .vertical-timeline-element-date {
+    color: rgba(255, 255, 255, 0.78);
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
+.timeline-icon {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa) !important;
+    color: #ffffff !important;
+    box-shadow:
+        0 0 0 6px rgba(167, 139, 250, 0.16),
+        0 14px 35px rgba(124, 58, 237, 0.45) !important;
+}
+
+.timeline-icon svg {
+    color: #ffffff;
 }
